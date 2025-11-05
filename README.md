@@ -1,7 +1,7 @@
 # PROYEK SEBLAK AMAN
 _The name is so random ngl_
 
-![Output Web](screenshots/VirtualBox_Master K8s_05_11_2025_23_03_05.png)
+![Output Web](screenshots/VirtualBox_Master_K8s_05_11_2025_23_03_05.png)
 
 1. Build (execute at project's root folder)
    ```bash
@@ -23,15 +23,15 @@ _The name is so random ngl_
 
 # Analisis Hasil Scanning Trivy
 
-**Image:** aplikasi-kompleks:1.0-rentan & aplikasi-kompleks:1.1-aman
-**Tanggal:** 5 November 2025
-**Penulis:** Erik Triayuda Wijaya
+- **Image:** aplikasi-kompleks:1.0-rentan & aplikasi-kompleks:1.1-aman
+- **Tanggal:** 5 November 2025
+- **Penulis:** Erik Triayuda Wijaya
 
 
 ### aplikasi-kompleks:1.0-rentan
 **Log:** [Trivy Report 1.0-Rentan](reports/M12_Trivy_Aplikasi-Kompleks_1.0-rentan.txt)
 
-![Hasil kotor](screenshots/VirtualBox_Master K8s_05_11_2025_20_02_06.png)
+![Hasil kotor](screenshots/VirtualBox_Master_K8s_05_11_2025_20_02_06.png)
 
 Total kerentanan yang ditemukan: 424 
 
@@ -49,7 +49,7 @@ Versi libx11 sebelum 1.7.1 dapat memberi kemungkinan penyerang untuk melakukan s
 ### aplikasi-kompleks:1.1-aman
 **Log:** [Trivy Report 1.1-Aman](reports/laporan-bersih.txt)
 
-![Hasil bersih](screenshots/VirtualBox_Master K8s_05_11_2025_23_11_47.png)
+![Hasil bersih](screenshots/VirtualBox_Master_K8s_05_11_2025_23_11_47.png)
 
 Total kerentanan yang ditemukan: 79
 
