@@ -1,6 +1,8 @@
 # PROYEK SEBLAK AMAN
 _The name is so random ngl_
 
+![Output Web](screenshots/VirtualBox_Master K8s_05_11_2025_23_03_05.png)
+
 1. Build (execute at project's root folder)
    ```bash
    docker build -t <image-name> -f build/Dockerfile.fixed .
@@ -27,7 +29,10 @@ _The name is so random ngl_
 
 
 ### aplikasi-kompleks:1.0-rentan
-**Log:** [Trivy Report](reports/M12_Trivy_Aplikasi-Kompleks_1.0-rentan.txt)
+**Log:** [Trivy Report 1.0-Rentan](reports/M12_Trivy_Aplikasi-Kompleks_1.0-rentan.txt)
+
+![Hasil kotor](screenshots/VirtualBox_Master K8s_05_11_2025_20_02_06.png)
+
 Total kerentanan yang ditemukan: 424 
 
 | Tipe | Critical | High | Medium | Low |
@@ -42,7 +47,10 @@ Versi libx11 sebelum 1.7.1 dapat memberi kemungkinan penyerang untuk melakukan s
 
 
 ### aplikasi-kompleks:1.1-aman
-**Log:** [Trivy Report](reports/laporan-bersih.txt)
+**Log:** [Trivy Report 1.1-Aman](reports/laporan-bersih.txt)
+
+![Hasil bersih](screenshots/VirtualBox_Master K8s_05_11_2025_23_11_47.png)
+
 Total kerentanan yang ditemukan: 79
 
 | Tipe | Critical | High | Medium | Low | Unknown |
@@ -50,6 +58,11 @@ Total kerentanan yang ditemukan: 79
 | Jumlah | 0 | 0 | 1 | 78 | 0 |
 
 Pada build terbaru, critical problem yang muncul pada versi sebelumnya kini telah tiada. Hal ini bisa diperiska pada [laporan_bersih.txt](laporan_bersih.txt)
+
+
+## QnA?
+Q: Apakah port yang digunakan untuk menampilkan index() tetap?  
+A: Tidak, port bisa diubah pada `app.py` dan saat mengeksekusi `docker run -d -p <port anda> ...`
 
 
 ## Kesimpulan
